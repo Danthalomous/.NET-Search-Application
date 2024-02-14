@@ -62,3 +62,8 @@ This repository contains a .NET search application that interacts with an existi
   
 ## Screenshots
 
+Below is a screenshot of the search functionality on the home page along with the filter
+![Search Page](SearcScreenshot.png)
+Below is a screenshot of some filtered search results
+![Search Results](SearchResults.png)
+
