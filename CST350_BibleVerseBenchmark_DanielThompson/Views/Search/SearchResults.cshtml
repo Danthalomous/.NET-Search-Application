@@ -1,0 +1,39 @@
+﻿@model List<BibleModel>
+
+@{
+    ViewData["Title"] = "SearchResults";
+}
+
+@if(Model.Count > 0)
+{
+    <div>
+        <h4>Search Results</h4>
+        <hr />
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Book</th>
+                    <th>Chapter</th>
+                    <th>Verse</th>
+                    <th>Text</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var verse in Model)
+                {
+                    <tr>
+                        <td>@verse.Book</td>
+                        <td>@verse.Chapter</td>
+                        <td>@verse.Verse</td>
+                        <td>@verse.Text</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p>There are no results.</p>
+}

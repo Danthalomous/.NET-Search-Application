@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To the MSV Bible Search Application. Search Below to Your Heart's Needs.</h1>
+    <form method="post" asp-controller="Search" asp-action="Index">
+        <input id="SearchTerm" name="SearchTerm" type="text" />
+        <select name="Option">
+            <option value=0>Both</option>
+            <option value=1>Old Testament</option>
+            <option value=2>New Testament</option>
+        </select>
+        <button type="submit" value="Search">Search</button>
+    </form>
+</div>
