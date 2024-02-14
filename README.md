@@ -1,4 +1,4 @@
-![.NET Search Application](https://example.com/path/to/search-app.png)
+![.NET Search Application](NET_Database_Search_Application.png)
 
 This repository contains a .NET search application that interacts with an existing Microsoft SQL Server database.
 
